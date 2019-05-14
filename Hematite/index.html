@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			//for jquery worksfine
+			if (typeof module === 'object') {window.module = module; module = undefined;}
+		</script>
+		<script type="text/javascript" src="nucleo.jquery-2.1.1.js"></script>
+	</head>
+	<body>
+		<button id="btn-py">Call Notepad</button>
+		<script type="text/javascript">
+			var shell = require('child_process').exec;
+			$('#btn-py').on('click', function(){
+				shell("python -i winauto.py ", function (error, stdout, stderr) {
+				      if (error !== null) {
+				        console.log('exec error: ' + error);
+				      }
+				});
+			})
+		</script>
+
+		<script>
+			//for jquery worksfine
+			if (window.module) module = window.module;
+		</script>
+	</body>
+</html>
