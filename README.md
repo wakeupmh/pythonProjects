@@ -1,2 +1,2 @@
 # pythonProjects
-## Some python projects
+## Some .py projects
