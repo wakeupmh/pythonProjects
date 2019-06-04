@@ -9,4 +9,4 @@ import json
 ## Outputs :crystal_ball:
  - Informations like: atomic mass, neutrons, protons, electrons, etc...
  
- It's quiet and free to do your best. :shipit:
+ It's quiet and free to do your best. :shipit: 
