@@ -16,3 +16,4 @@ import os
  - save your thumbmail with 'imgName_sizeInputed.extensionInputed'
 
 It's quiet and free to do your best. :shipit:
+ 
