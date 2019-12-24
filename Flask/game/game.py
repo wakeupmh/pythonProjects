@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
@@ -15,7 +15,7 @@ game2 = Game('Pokemon Gold', 'RPG', 'GBA')
 list = [game1, game2]
 
 
-@app.route('/list')
+@app.route('/')
 def hello():
     return render_template('list.html', props={'title': 'Games', 'games': list})
 
@@ -32,7 +32,7 @@ def create():
     console = request.form['console']
     game = Game(name, category, console)
     list.append(game)
-    return render_template('list.html', props={'title': 'Games', 'games': list})
+    return redirect('/')
 
 
 app.run(debug=True)
