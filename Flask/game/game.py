@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 @app.route('/init')
 def hello():
-  return render_template('list.html', title='Games')
+  list= ['Tetris', 'Super Mario', 'Pokemon Gold']
+  return render_template('list.html', props={'title': 'Games', 'games': list})
 
 app.run()
